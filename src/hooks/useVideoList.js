@@ -39,7 +39,7 @@ export default function useVideoList(page) {
             return [...prevVideos, ...Object.values(snapshot.val())];
           });
         } else {
-          hasMore(false);
+          setHasMore(false);
         }
       } catch (err) {
         console.log(err);
